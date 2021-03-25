@@ -7,15 +7,15 @@
  *
  */
 
-namespace BarraDev\StockModule;
+namespace BarraDev\FileUploadModule;
 
 use Illuminate\Support\ServiceProvider;
-use BarraDev\StockModule\StockModulePublishCommand;
+use BarraDev\FileUploadModule\FileUploadModulePublishCommand;
 
 /**
  * Stock Module Service Provider
  */
-class StockModuleServiceProvider extends ServiceProvider
+class FileUploadModuleServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -26,7 +26,7 @@ class StockModuleServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
-                StockModulePublishCommand::class,
+                FileUploadModulePublishCommand::class,
             ]);
         }
     }

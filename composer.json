@@ -1,6 +1,6 @@
 {
-    "name": "barradev/stockmodule",
-    "description": "Modul stock barang untuk modul Barra Dev Studio",
+    "name": "barradev/fileuploadmodule",
+    "description": "Modul upload file untuk modul Barra Dev Studio",
     "type": "package",
     "license": "MIT",
     "authors": [
@@ -11,18 +11,16 @@
     ],
     "autoload": {
         "psr-4": {
-            "BarraDev\\StockModule\\": "src/"
+            "BarraDev\\FileUploadModule\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "BarraDev\\StockModule\\StockModuleServiceProvider"
+                "BarraDev\\FileUploadModule\\FileUploadModuleServiceProvider"
             ],
             "aliases": {}
         }
     },
-    "require": {
-        "yajra/laravel-datatables-oracle": "^9.15"
-    }
+    "require": {}
 }

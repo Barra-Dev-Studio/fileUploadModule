@@ -1,31 +1,31 @@
 <?php
 /*
- * This file is part of the Stock Module package.
+ * This file is part of the File Upload Module package.
  *
  * (c) Khoerul Umam <id.khoerulumam@gmail.com>
  *
  */
 
-namespace BarraDev\StockModule;
+namespace BarraDev\FileUploadModule;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 
-class StockModulePublishCommand extends Command
+class FileUploadModulePublishCommand extends Command
 {
     /**
      * The console command signature.
      *
      * @var string
      */
-    protected $signature = 'stockmodule:publish';
+    protected $signature = 'fileuploadmodule:publish';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Publish Stock Module assets from vendor packages';
+    protected $description = 'Publish File Upload Module assets from vendor packages';
 
     /**
      * Compatiblity for Lumen 5.5.
@@ -46,13 +46,9 @@ class StockModulePublishCommand extends Command
     {
         $this->publishModels();
         $this->publishMigrations();
-        $this->publishServices();
-        $this->publishViews();
-        $this->publishAssets();
         $this->publishControllers();
-        $this->publishRequests();
 
-        $this->info("Publishing Stock Module complete");
+        $this->info("Publishing File Upload Module complete. Cheers");
     }
 
 
